@@ -26,8 +26,8 @@ library(dplyr)
 data.folder <- "UCI HAR Dataset"
 
 # Funcitons
-# readSet: Read file "name" (with "set" suffix) from "set" folder
-readSet <- function(name, set) {
+# readFile: Read file "name" (with "set" suffix) from "set" folder
+readFile <- function(name, set) {
     fread(file.path(data.folder, set, sprintf(name, set)))
 }
 
